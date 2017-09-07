@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="css/style.css">s
+    <link rel="stylesheet" type="text/css" href="precss/style.less"/>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="description" content="Описание сайта">
     <meta name="keywords" content="Ключевые слова">
@@ -36,49 +37,69 @@
             </div>
             <div class="header-top__right">
                 <a class="header-top__vk" href="#">
-                    <!--<svg>-->
-                        <!--<use></use>-->
-                    <!--</svg>-->
-                    <img src="#" alt="#"></a>
+                    <svg class="header-top_icon-right header-top_icon-right--vk">
+                        <use xlink:href="img/vk.svg#vk"></use>
+                    </svg>
+                </a>
                 <a class="header-top__fb" href="#">
-                    <!--<svg>-->
-                        <!--<use></use>-->
-                    <!--</svg>-->
-                    <img src="#" alt="#"></a>
+                    <svg class="header-top_icon-right header-top_icon-right--fb">
+                        <use xlink:href="img/facebook.svg#fb"></use>
+                    </svg>
+                </a>
                 <a class="header-top__tw" href="#">
-                    <!--<svg>-->
-                        <!--<use></use>-->
-                    <!--</svg>-->
-                    <img src="#" alt="#"></a>
+                    <svg class="header-top_icon-right header-top_icon-right--tw">
+                        <use xlink:href="img/twitter_sign.svg#tw"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
     <div class="header-bot">
-        <div class="wrapper">
+        <div class="wrapper wrapper--between-bot">
             <div class="bot-left">
-                <img class="bot-left__img" src="#" alt="#">
+                <img class="bot-left__img" src="img/logo2.svg" alt="#">
                 <div class="bot-left__logo-name">
                     <h1 class="bot-left__name-top">Mi.pro</h1>
-                    <span class="bot-left__name-bot">Bright ideas Easy solution</span>
+                    <div class="bot-left__name-bot1">Bright ideas</div>
+                    <div class="bot-left__name-bot2">Easy solution</div>
                 </div>
             </div>
             <div class="header-bot__center">
                 <div class="contact-top">
-                    <span class="contact-top__phone">8(800)684-55-94</span>
-                    <a class="contact-top__email" href="mailto:info@Mi.pro">info@mi.pro</a>
+                    <a class="contact-top__phone" href="tel:+788006845594">
+                        <svg class="contact-top__phone-ico">
+                            <use xlink:href="img/phone.svg#phone"></use>
+                        </svg>
+                        8(800)684-55-94</a>
+                    <a class="contact-top__email" href="mailto:info@Mi.pro">
+                        <svg class="contact-top__email-ico">
+                            <use xlink:href="img/envelope_alt.svg#envelope_alt"></use>
+                        </svg>
+                        info@mi.pro</a>
                 </div>
-                <div class="header-bot__search-form"></div>
+                <div class="header-bot__search">
+                    <form class="header-bot__search-form" action="#" method="get">
+                        <input class="header-bot__input-text" type="text" placeholder="Введите поисковую фразу"
+                               name="search">
+                        <input class="header-bot__input-btn" type="submit" name="btn_search"
+                                                    value="">
+                    </form>
+                </div>
             </div>
             <div class="header-bot__right">
                 <div class="basket">
-                    <span class="basket__cost"></span>
-                    <a class="basket__info" href="#"><img class="basket__img" src="#" alt="#"></a>
+                    <span class="basket__cost"> 7500 р.</span>
+                    <a class="basket__info" href="#">
+                        <svg class="basket__icon">
+                            <use xlink:href="img/shopping_cart.svg#shopping_cart"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="nav-main">
-        <div class="wrapper">
+        <div class="wrapper wrapper--nav">
             <ul class="nav-main__list">
                 <li class="nav-main__item"><a href="#" class="nav-main__link">Главная</a></li>
                 <li class="nav-main__item"><a href="#" class="nav-main__link">Каталог</a></li>
@@ -89,8 +110,9 @@
         </div>
     </div>
 </header>
-<div class="wrapper">
-    <section class="right"> <!--slider-->
+<div class="wrapper wrapper--section">
+    <div class="section-right">
+        <!--slider-->
         <div class="slider">
             <img class="slider__image" src="#" alt="#">
             <span class="slider__name">Xiaomi Mi6 Black</span>
@@ -174,20 +196,60 @@
                 </div>
             </section>
         </main>
-    </section>
+    </div>
     <!--aside-->
     <aside>
         <nav class="nav-aside">
-            <h2>Категории</h2>
+            <div class="nav-aside__category">Категории</div>
             <ul class="nav-aside_list">
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Компьютеры</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Смартфоны</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Планшеты</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Гарнитуры</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Бытовая техника</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Акустика</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Умные браслеты</a></li>
-                <li class="nav-aside__item"><a href="#" class="nav-aside__link">Сетевое оборудование</a></li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/home.svg#home"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Компьютеры</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/heart.svg#heart"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Смартфоны</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/group.svg#group"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Планшеты</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/calendar.svg#calendar"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Гарнитуры</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/cog.svg#cog"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Бытовая техника</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/paper_clip.svg#paper_clip"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Акустика</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/star.svg#star"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Умные браслеты</a>
+                </li>
+                <li class="nav-aside__item">
+                    <svg class="nav-aide__ico">
+                        <use xlink:href="img/cloud.svg#cloud"></use>
+                    </svg>
+                    <a href="#" class="nav-aside__link">Сетевое оборудование</a>
+                </li>
             </ul>
         </nav>
         <div class="banner">

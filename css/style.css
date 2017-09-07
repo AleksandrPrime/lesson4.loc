@@ -129,7 +129,8 @@ img {
 .header-top_item:last-child {
   border-right: none;
 }
-.header-top_icon {
+.header-top_icon,
+.header-top_icon-right {
   fill: #666666;
 }
 .header-top_icon--signin {
@@ -143,6 +144,21 @@ img {
   width: 15px;
   height: 13px;
 }
+.header-top_icon-right {
+  margin-right: 31px;
+}
+.header-top_icon-right--vk {
+  width: 23px;
+  height: 14px;
+}
+.header-top_icon-right--fb {
+  width: 11px;
+  height: 19px;
+}
+.header-top_icon-right--tw {
+  width: 18px;
+  height: 18px;
+}
 .header-top__favorites {
   color: #666666;
 }
@@ -153,7 +169,195 @@ img {
 .header-top__comparison {
   color: #666666;
 }
-.header-top__right {
+.wrapper--between-bot {
+  justify-content: space-between;
+  align-items: center;
+}
+.bot-left {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+.bot-left__img {
+  width: 120px;
+  height: 130px;
+}
+.bot-left__name-top {
+  color: #3e3d3d;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 600;
+}
+.bot-left__name-bot1,
+.bot-left__name-bot2 {
+  color: #666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bot-left__name-bot2 {
+  margin-left: 14px;
+}
+.contact-top__phone,
+.contact-top__email {
+  font-size: 16px;
+  font-weight: 100;
+  color: black;
+  fill: #9d6bcc;
+}
+.contact-top__phone-ico {
+  width: 18px;
+  height: 18px;
+}
+.contact-top__email-ico {
+  width: 21px;
+  height: 21px;
+}
+.header-bot__search-form {
+  max-width: 610px;
+  height: 46px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+.header-bot__input-text {
+  box-sizing: border-box;
+  flex: 1 0 85%;
+  outline: none;
+  border: none;
+  font: 16px Roboto;
+  padding-left: 20px;
+}
+.header-bot__input-text::-webkit-input-placeholder {
+  color: #cecece;
+}
+.header-bot__input-text:focus {
+  box-shadow: 1px 1px 4px #c3c3c3 inset;
+}
+.header-bot__input-btn {
+  outline: none;
+  border: none;
+  flex: 0 0 15%;
+  background: url("../img/search.svg") no-repeat #F4F4F4 center;
+}
+.header-bot__input-btn:hover {
+  cursor: pointer;
+}
+.header-bot__input-btn:active {
+  background-color: #CDCDCD;
+}
+.basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  margin: auto auto auto 55px;
+  box-sizing: border-box;
+  border: 1px solid #C3C3C3;
+  position: relative;
+}
+.basket::before {
+  content: '2';
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: -15%;
+  right: 13%;
+  color: white;
+  padding-top: 3px;
+  text-align: center;
+  font: 16px Roboto;
+  box-sizing: border-box;
+}
+.basket__cost {
+  font: 20px Roboto;
+  color: #666666;
+  padding: 12px 0;
+  flex-grow: 2;
+  border-right: 3px solid #cecece;
+  padding-right: 30px;
+}
+.basket__icon {
+  width: 37px;
+  height: 33px;
+  margin-left: 20px;
+  flex-grow: 1;
+  fill: #9d6bcc;
+}
+.nav-main {
+  background-color: #9d6bcc;
+}
+.wrapper--nav {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto 25px;
+}
+.nav-main__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-main__item {
+  border-left: 1px solid white;
+  display: flex;
+  justify-content: center;
+  flex: 0 1 17%;
+}
+.nav-main__link {
+  font: 18px Roboto;
+  color: #fff;
+}
+.nav-main__link:hover {
+  color: #f4af3f;
+}
+.wrapper--section {
+  padding: 0 21px;
+  box-sizing: border-box;
+}
+.section-right {
+  order: 2;
+  flex-grow: 2;
+}
+aside {
+  order: 1;
+  margin-right: 30px;
+  flex-grow: 1;
+  max-width: 290px;
+}
+.nav-aside__category {
+  padding: 21px 30px;
+  font: 20px Verdana;
+  background: #4a4a4a;
+  box-sizing: border-box;
+}
+.nav-aside_list {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+.nav-aside__item {
+  padding: 20px;
+  background: #F4F4F4;
+  border-bottom: 1px solid #cecece;
+}
+.nav-aside__item:hover {
+  background: #CDCDCD;
+  cursor: pointer;
+}
+.nav-aside__link {
+  font: 16px Verdana;
+  color: #4a4a4a;
+}
+.nav-aide__ico {
+  width: 15px;
+  height: 15px;
+  vertical-align: text-bottom;
+  fill: #4a4a4a;
+  padding-right: 15px;
 }
