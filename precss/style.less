@@ -15,7 +15,7 @@ img{
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
 }
@@ -118,6 +118,7 @@ header{
 .bot-left {
   display: flex;
   align-items: center;
+  min-width: 230px;
 }
 
 .bot-left__img {
@@ -125,11 +126,21 @@ header{
   height: 130px;
 }
 
+.bot-left__logo-name{
+  //margin-right: 10px;
+  min-width: 120px;
+}
+
 .bot-left__name-top {
   color: #3e3d3d;
   font-size: 28px;
   font-family: Roboto;
   font-weight: 600;
+}
+
+.header-bot__center{
+  max-width: 610px;
+  width: 58%;
 }
 
 .bot-left__name-bot1, .bot-left__name-bot2 {
@@ -193,6 +204,9 @@ header{
     &:active{
       background-color: #CDCDCD;
     }
+}
+
+.header-bot__right{
 }
 
 .basket {
@@ -280,14 +294,14 @@ header{
 
 .section-right {
   order: 2;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 aside{
-  order: 1;
+  max-width: 290px;
+  width: 100%;
   margin-right: 30px;
   flex-grow: 1;
-  max-width: 290px;
 }
 
 .nav-aside__category {
@@ -305,6 +319,7 @@ aside{
 }
 
 .nav-aside__item {
+  display: flex;
   padding: 20px;
   background: #F4F4F4;
   border-bottom: 1px solid #cecece;
@@ -325,4 +340,319 @@ aside{
   vertical-align: text-bottom;
   fill: #4a4a4a;
   padding-right: 15px;
+}
+
+.banner__top, .banner__bot {
+  margin: 5px 0;
+  border: 2px solid #cecece;
+  box-sizing: border-box;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+}
+
+.slider{
+  width: 100%;
+  display: block;
+  min-height: 305px;
+  margin-bottom: 25px;
+}
+
+.slider__box{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  padding-top: 25px;
+  //padding-right: 115px;
+  padding-left: 145px;
+  padding-bottom: 25px;
+}
+
+.slider__image{
+  align-items: stretch;
+  padding-right: 115px;
+  max-width: 100%;
+  max-height: 254px;
+  //height: auto;
+}
+
+.slider__info > span{
+  display: block;
+}
+
+.slider__name {
+  color: #666;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.slider__slogan {
+  color: @color-purple;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.slider__description {
+  max-width: 299px;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.slider__buy-now {
+  max-width: 185px;
+  width: 100%;
+  min-height: 53px;
+  outline: none;
+  border: 1px solid @color-purple;
+  text-transform: uppercase;
+  padding: 15px 12px;
+  color: #ff824a;
+  font: 16px Myriad Pro;
+  font-weight: 600;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.sale, .discounts, .shares {
+  flex-basis: 28.5%;
+  border: 1px solid #cecece;
+  padding: 15px 14px;
+   &:hover{
+     cursor: pointer;
+     opacity: 0.8;
+     box-shadow: 2px 2px 5px #cecece;
+   }
+    &:active{
+      box-shadow: 2px 2px 5px #cecece inset;
+   }
+}
+
+.sale__icon {
+  width: 33px;
+  height: 26px;
+  vertical-align: text-bottom;
+}
+
+.discounts__icon {
+  width: 27px;
+  height: 28px;
+  vertical-align: text-bottom;
+}
+
+.shares__icon {
+  width: 27px;
+  height: 23px;
+  vertical-align: text-bottom;
+}
+
+.sale__caption, .discounts__caption, .shares__caption {
+  font: 30px Verdana;
+}
+
+.sale__description, .discounts__description, .shares__description {
+  font: 14px Verdana;
+  color: #666;
+  display: block;
+  padding-top: 5px;
+  font-weight: 400;
+}
+
+.sale__icon--color{
+  fill: @color-purple;
+}
+
+.sale__caption--color{
+  color: @color-purple;
+}
+
+.discounts__icon--color {
+  fill: #ff824a;
+}
+
+.discounts__caption--orange {
+  color: #ff824a;
+}
+
+.shares__icon--color {
+  fill: #37a49e;
+}
+
+.shares__caption--color {
+  color: #37a49e;
+}
+
+.new-items, .discount-items{
+  font: 17px Verdana;
+  text-transform: uppercase;
+  color: #666666;
+  display: block;
+  border-bottom: 1px solid #cecece;
+}
+
+.new-box, .discount-box{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.item{
+  flex-basis: 23%;
+  border: 1px solid #cecece;
+  margin: 25px 0px 20px 0;
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      transform: scale(1.05);
+      transition: transform 1.5s;
+      box-shadow: 2px 2px 2px #cecece;
+      cursor: pointer;
+    }
+    &:active{
+      transform: scale(1);
+      transition: transform 0.1s;
+    }
+}
+
+.item__image{
+  max-height: 130px;
+}
+
+.item > span{
+  display: block;
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+.item--img-new:before{
+  content: "new";
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #37a49e;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: #fff;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font: 12px Veranda;
+}
+
+.item--img-discount:before{
+  content: "-10%";
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f4af3f;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: #fff;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font: 12px Veranda;
+
+}
+
+.item__xiaomi-mi5 {
+  padding-bottom: 10px;
+  font: 18px Verdana;
+  color: #666;
+  padding-top: 30px;
+}
+
+.item__price {
+  padding-bottom: 10px;
+  font: 18px Verdana;
+  color: @color-purple;
+}
+
+.item__price--discoutn {
+  font: 10px Verdana;
+  color: #808080;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-align: right;
+  line-height: 1;
+}
+
+.item__in-basket {
+  display: flex;
+  align-items: stretch;
+}
+
+.item__left-basket {
+  background: @color-purple;
+  flex-grow: 1;
+  padding: 10px 0;
+    &:hover{
+      background: #f4af3f;
+    }
+    &:active{
+      opacity: 0.8;
+    }
+}
+
+.item__right-basket {
+  background: @color-purple;
+  flex-grow: 2;
+  padding: 10px 0;
+  margin-left: 1px;
+    &:hover{
+      background: #f4af3f;
+    }
+    &:active{
+      opacity: 0.8;
+    }
+}
+
+.item__basket-icon {
+  width: 14px;
+  height: 13px;
+  padding: 0 10px;
+
+  fill: #fff;
+}
+
+.item__put-basket {
+  font: 18px Verdana;
+  color: #fff;
+}
+
+.item__bolt-icon {
+  width: 8px;
+  height: 15px;
+  fill: #fff;
+}
+
+.bot-left--footer{
+  max-width: 290px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.footer-top {
+  background: #4a4a4a;
+}
+
+.bot-left__name-top--white, .bot-left__name-bot1--white, .bot-left__name-bot2--white{
+  color: white;
 }
