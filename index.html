@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" type="text/css" href="precss/style.less"/>
     <meta charset="UTF-8">
     <meta name="description" content="Описание сайта">
     <meta name="keywords" content="Ключевые слова">
@@ -116,36 +117,42 @@
         <!--slider-->
         <div class="slider">
             <div class="slider__box">
-                <img class="slider__image" src="img/slider-img.png" alt="Mi6">
-                <div class="slider__info">
-                    <span class="slider__name">Xiaomi Mi6 Black</span>
-                    <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
-                    <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
-                    <form class="slider__form">
-                        <button class="slider__buy-now">купить сейчас</button>
-                    </form>
+                <div class="slider__active-image">
+                    <img class="slider__image" src="img/slider-img.png" alt="Mi6">
+                    <div class="slider__info">
+                        <span class="slider__name">Xiaomi Mi6 Black</span>
+                        <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
+                        <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
+                        <form class="slider__form">
+                            <button class="slider__buy-now">купить сейчас</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="slider__box">
-                <img class="slider__image" src="img/slider-img.png" alt="Mi6">
-                <div class="slider__info">
-                    <span class="slider__name">Xiaomi Mi6 Black</span>
-                    <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
-                    <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
-                    <form class="slider__form">
-                        <button class="slider__buy-now">купить сейчас</button>
-                    </form>
+                <div class="slider__active-image">
+                    <img class="slider__image" src="img/slider-img.png" alt="Mi6">
+                    <div class="slider__info">
+                        <span class="slider__name">Xiaomi Mi6 Black</span>
+                        <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
+                        <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
+                        <form class="slider__form">
+                            <button class="slider__buy-now">купить сейчас</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="slider__box">
-                <img class="slider__image" src="img/slider-img.png" alt="Mi6">
-                <div class="slider__info">
-                    <span class="slider__name">Xiaomi Mi6 Black</span>
-                    <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
-                    <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
-                    <form class="slider__form">
-                        <button class="slider__buy-now">купить сейчас</button>
-                    </form>
+                <div class="slider__active-image">
+                    <img class="slider__image" src="img/slider-img.png" alt="Mi6">
+                    <div class="slider__info">
+                        <span class="slider__name">Xiaomi Mi6 Black</span>
+                        <span class="slider__slogan">ТОНКИЙ НАМЕК НА ТВОЕ ПРЕВОСХОДСТВО</span>
+                        <span class="slider__description">Мы рады представить вам новую модель телефона от Xiaomi</span>
+                        <form class="slider__form">
+                            <button class="slider__buy-now">купить сейчас</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,14 +432,15 @@
                 <span class="payment__item">В кредит</span>
             </div>
             <address class="contact-info">
-                <a class="contact-info__item" href="tel:+788006845594">8(499)654-98-79</a>
-                <span class="contact-info__item">E-mail: <a class="contact-info__item" href="mailto:info@Mi.pro">info@Mi.pro</a></span>
+                <span class="contact-info__inner">Контактная информация</span>
+                <a class="contact-info__item" href="tel:+788006845594">Телефон:8(499)654-98-79</a>
+                <span class="contact-info__item">E-mail: <a class="contact-info__item-link" href="mailto:info@Mi.pro">info@Mi.pro</a></span>
                 <span class="contact-info__item">Адрес: г. Москва Фантастический проезд д.234</span>
             </address>
         </div>
 
         <div class="footer-bot">
-            <div class="wrapper">
+            <div class="wrapper wrapper--footer-bot">
                 <small class="footer-bot__inner">&#169; Mi.pro 2017</small>
             </div>
         </div>
@@ -441,7 +449,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>

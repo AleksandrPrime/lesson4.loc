@@ -1,0 +1,21 @@
+{
+  "name": "src",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "AleksandrPrime <golem007@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AleksandrPrime/lesson2.loc",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.7.1"
+  }
+}

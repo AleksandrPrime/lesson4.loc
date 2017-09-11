@@ -353,19 +353,23 @@ aside{
 }
 
 .slider{
-  width: 100%;
+  max-width: 925px;
   display: block;
   min-height: 305px;
   margin-bottom: 25px;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+}
+
+.slider__active-image {
+  display: flex;
 }
 
 .slider__box{
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  border: 1px solid #cecece;
   padding-top: 25px;
-  //padding-right: 115px;
+  padding-right: 115px;
   padding-left: 145px;
   padding-bottom: 25px;
 }
@@ -414,6 +418,32 @@ aside{
   font-weight: 600;
   background: #fff;
   margin-top: 20px;
+}
+
+.slick-prev, .slick-next{
+  height: 15px;
+  width: 15px;
+  border-left: 3px solid @color-purple;
+  border-bottom: 3px solid @color-purple;
+  &:hover{
+    border-color: #f4af3f;
+  }
+  &:active{
+    opacity: 0.5;
+  }
+}
+.slick-prev{
+  left: 5px;
+  transform: rotate(45deg);
+  z-index: 100;
+}
+.slick-next{
+  right: 5px;
+  transform: rotate(225deg);
+}
+.slick-prev:before,
+.slick-next:before {
+  color: transparent;
 }
 
 .offers {
@@ -655,4 +685,88 @@ aside{
 
 .bot-left__name-top--white, .bot-left__name-bot1--white, .bot-left__name-bot2--white{
   color: white;
+}
+
+.foot-nav, .payment{
+  margin-left: 13px;
+  margin-right: 125px;
+}
+
+.foot-nav__menu {
+  max-width: 90px;
+  padding-right: 40px;
+  color: #fff;
+  font: 18px Roboto-Regular;
+  border-bottom: 1px solid;
+}
+
+.foot-nav__item {
+  padding-bottom: 10px;
+}
+
+.foot-nav__link {
+  color: #fff;
+  font: 14px Roboto-Regula;
+    &:hover{
+      color: #f4af3f;
+    }
+}
+
+.payment__inner {
+  display: block;
+  padding-right: 45px;
+  color: #fff;
+  font: 18px Roboto-Regular;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+
+.payment__item {
+  display: block;
+  color: #fff;
+  font: 14px Roboto-Regula;
+  padding-bottom: 10px;
+    &:hover{
+      color: #f4af3f;
+      cursor: pointer;
+    }
+}
+
+.contact-info__inner {
+  display: block;
+  color: #fff;
+  font: 18px Roboto-Regular;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+.contact-info__item {
+  display: block;
+  color: #fff;
+  font: 14px Roboto-Regular;
+  padding-bottom: 10px;
+  &:hover {
+    color: #f4af3f;
+  }
+}
+.contact-info__item-link {
+  color: #fff;
+  &:hover {
+    color: #f4af3f;
+  }
+}
+
+.footer-bot{
+  background: #000000;
+}
+
+.wrapper--footer-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bot__inner {
+  font: 12px Roboto;
+  color: #fff;
+  padding: 10px 0;
 }
